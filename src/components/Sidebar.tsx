@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { IoBrowsersOutline, IoCalculator, IoFootball, IoHeartOutline, IoLogoReact } from 'react-icons/io5'
 import { SidebarMenuItem } from './SidebarMenuItem'
+import { Avatar } from '@mui/material'
 
 const menuItems = [
   {
@@ -9,24 +10,12 @@ const menuItems = [
     title: 'Dashboard',
     subtitle: 'Visualization',
   },
-  {
-    path: '/dashboard/counter',
-    icon: <IoCalculator size={30} />,
-    title: 'Counter',
-    subtitle: 'Client side counter',
-  },
-  {
-    path: '/dashboard/item2',
-    icon: <IoFootball size={30} />,
-    title: 'Menu Item 2',
-    subtitle: 'Item description',
-  },
-  {
-    path: '/dashboard/item3',
-    icon: <IoHeartOutline size={30} />,
-    title: 'Menu Item 3',
-    subtitle: 'Item description',
-  },
+  // {
+  //   path: '/dashboard/counter',
+  //   icon: <IoCalculator size={30} />,
+  //   title: 'Counter',
+  //   subtitle: 'Client side counter',
+  // },
 ]
 
 export const Sidebar = () => {
@@ -46,13 +35,14 @@ export const Sidebar = () => {
         <p className="text-slate-500">Welcome back,</p>
         <a href="#" className="inline-flex space-x-2 items-center">
           <span>
-            <Image
+            <Avatar alt='David Brenes' src="">VB</Avatar>
+            {/* <Image
               className="rounded-full w-8 h-8"
               src="https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=128&q=80"
               alt="User avatar"
               width={50}
               height={50}
-            />
+            /> */}
           </span>
           <span className="text-sm md:text-base font-bold">
             Vid Brenes
