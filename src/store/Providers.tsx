@@ -1,6 +1,7 @@
 'use client'
 import { Provider } from 'react-redux'
 import { store } from '.'
+import StickyNotesProvider from '@/context/StickyNotesContext'
 
 interface Props {
   children: React.ReactNode
@@ -8,6 +9,10 @@ interface Props {
 
 export const Providers = ({ children }: Props) => {
   return (
-    <Provider store={store}>{children}</Provider>
+    <Provider store={store}>
+      <StickyNotesProvider>
+        {children}
+      </StickyNotesProvider>
+    </Provider>
   )
 }

@@ -10,6 +10,12 @@ const menuItems = [
     title: 'Dashboard',
     subtitle: 'Visualization',
   },
+  {
+    path: '/dashboard/notes',
+    icon: <IoBrowsersOutline size={30} />,
+    title: 'Notes',
+    subtitle: 'Sticky notes demo',
+  },
   // {
   //   path: '/dashboard/counter',
   //   icon: <IoCalculator size={30} />,
